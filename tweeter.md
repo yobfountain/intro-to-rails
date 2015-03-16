@@ -28,6 +28,7 @@ Add the line below to your config/routes.rb page:<br> `root 'chirps#index'`
 # Install devise
 
  1. `rails generate devise:install`
+ 1. `rails generate devise:views`
  1. `rails generate devise user`
  1. `rake db:migrate`
  1. Add the code below to views/application.html.erb and remove it from views/chirps/show.html.erb and views/chirps/index.html.erb
