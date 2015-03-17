@@ -1,0 +1,21 @@
+<%= form_for(@chirp) do |f| %>
+  <% if @chirp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@chirp.errors.count, "error") %> prohibited this chirp from being saved:</h2>
+
+      <ul>
+      <% @chirp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

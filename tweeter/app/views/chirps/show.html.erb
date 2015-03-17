@@ -1,0 +1,12 @@
+<p>
+  <strong>Body:</strong>
+  <%= @chirp.body %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @chirp.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_chirp_path(@chirp) %> |
+<%= link_to 'Back', chirps_path %>
